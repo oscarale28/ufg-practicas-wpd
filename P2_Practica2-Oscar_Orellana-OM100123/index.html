@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Práctica 2 - Formularios</title>
+  </head>
+  <body>
+    <main>
+      <div class="form-container">
+        <h1>Formulario de registro</h1>
+        <form action="">
+          <!--Name section-->
+          <div class="form-row">
+            <div class="form-group flex-05">
+              <label for="forename">Nombres:</label>
+              <input type="text" id="forename" name="forename" required />
+            </div>
+
+            <div class="form-group flex-05">
+              <label for="surname">Apellidos:</label>
+              <input type="text" id="surname" name="surname" />
+            </div>
+          </div>
+
+          <!--Gender section-->
+          <div class="form-row">
+            <p>Sexo:</p>
+            <div class="form-group radio flex-05">
+              <input type="radio" id="radioMale" name="radioMale" value="m" />
+              <label for="radioMale">Masculino</label>
+            </div>
+            <div class="form-group radio flex-05">
+              <input
+                type="radio"
+                id="radioFemale"
+                name="radioFemale"
+                value="f"
+              />
+              <label for="radioFemale">Femenino</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group flex-1">
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" name="email" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group check flex-1">
+              <input type="checkbox" id="checkOffers" name="checkOffers" />
+              <label for="checkOffers"
+                >Deseo recibir información sobre novedades y ofertas</label
+              >
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group check flex-1">
+              <input
+                type="checkbox"
+                id="checkTerms"
+                name="checkTerms"
+                checked
+              />
+              <label for="checkTerms"
+                >Declaro haber leido y aceptar las condiciones generales del
+                programa y la normativa sobre protección de datos</label
+              >
+            </div>
+          </div>
+          <div class="form-row submit">
+            <button type="submit" class="submit-btn">Enviar</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="form-container">
+        <h1>Información personal</h1>
+        <form action="">
+          <fieldset>
+            <legend>Información personal</legend>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="forename2">Nombre:</label>
+                <input type="text" id="forename2" name="forename2" />
+              </div>
+              <div class="form-group">
+                <label for="surname2">Apellido:</label>
+                <input type="text" id="surname2" name="surname2" />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Datos de contacto</legend>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email2">Correo electrónico</label>
+                <input type="email" id="email2" name="email2" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Teléfono</label>
+                <input type="text" id="phone" name="phone" />
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-row submit">
+            <button type="submit" class="submit-btn">Enviar</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="form-container">
+        <h1>Formulario de suscripción</h1>
+        <form action="">
+          <fieldset>
+            <legend>Elección de plan</legend>
+            <div class="form-row">
+              <div class="form-group">
+                <p>Selecciona un plan:</p>
+                <ol class="plan-options">
+                  <li class="form-group radio flex-05">
+                    <input
+                      type="radio"
+                      value="basic"
+                      id="basic-plan"
+                      name="basic-plan"
+                      checked
+                    />
+                    <label for="radioFemale">Básico</label>
+                  </li>
+                  <li class="form-group radio flex-05">
+                    <input
+                      type="radio"
+                      value="premium"
+                      id="premium-plan"
+                      name="premium-plan"
+                    />
+                    <label for="radioFemale">Premium</label>
+                  </li>
+                  <li class="form-group radio flex-05">
+                    <input
+                      type="radio"
+                      value="enterprise"
+                      id="enterprise-plan"
+                      name="enterprise-plan"
+                    />
+                    <label for="radioFemale">Enterprise</label>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-row submit">
+            <button type="submit" class="submit-btn">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
