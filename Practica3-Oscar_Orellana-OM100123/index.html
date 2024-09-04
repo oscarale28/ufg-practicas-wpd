@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Práctica 3 - OM100123</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      main {
+        margin: 20px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      section {
+        margin-bottom: 20px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      caption {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+
+      th,
+      td {
+        border: 1px solid #000;
+        padding: 5px;
+      }
+
+      th {
+        background-color: #f0f0f0;
+      }
+
+      thead th {
+        background-color: #e0e0e0;
+      }
+
+      .total-label,
+      .subtotal {
+        font-weight: bold;
+      }
+
+      .total-label {
+        text-align: center;
+      }
+
+      .descanso {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Guía 3 - Oscar Orellana (OM100123)</h1>
+
+      <section>
+        <table>
+          <caption>
+            Tabla con combinación de filas y columnas
+          </caption>
+          <thead>
+            <th>Celda 1</th>
+            <th>Celda 2</th>
+            <th>Celda 3</th>
+            <th>Celda 4</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="3">Celda 5</td>
+              <td>Celda 6</td>
+              <td colspan="2">Celda 7</td>
+            </tr>
+            <tr>
+              <td>Celda 8</td>
+              <td>Celda 9</td>
+              <td rowspan="2">Celda 10</td>
+            </tr>
+            <tr>
+              <td colspan="2">Celda 11</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <table>
+          <caption>
+            Listado de productos
+          </caption>
+          <thead>
+            <th>Nombre producto</th>
+            <th>Precio unitario</th>
+            <th>Unidades</th>
+            <th>Subtotal</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Reproductor MP3 (80 GB)</td>
+              <td>192.02</td>
+              <td>1</td>
+              <td>192.02</td>
+            </tr>
+            <tr>
+              <td>Fundas de colores</td>
+              <td>2.50</td>
+              <td>5</td>
+              <td>12.50</td>
+            </tr>
+            <tr>
+              <td>Reproductor de radio & control remoto</td>
+              <td>12.99</td>
+              <td>1</td>
+              <td>12.99</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td class="total-label">TOTAL</td>
+              <td>-</td>
+              <td>7</td>
+              <td class="subtotal">207.51</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section>
+        <table>
+          <caption>
+            Horario de clases
+          </caption>
+
+          <thead>
+            <th colspan="6">MI HORARIO DE CLASES</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hora</td>
+              <td>LUNES</td>
+              <td>MARTES</td>
+              <td>MIÉRCOLES</td>
+              <td>JUEVES</td>
+              <td>VIERNES</td>
+            </tr>
+            <tr>
+              <td>7 - 9 am</td>
+              <td>Física</td>
+              <td>Geografía</td>
+              <td>Historia</td>
+              <td>Cálculo</td>
+              <td>Cívica</td>
+            </tr>
+            <tr>
+              <td>9 - 11 am</td>
+              <td>Comunicación</td>
+              <td>Biología</td>
+              <td>Matemática</td>
+              <td>Física</td>
+              <td>Química</td>
+            </tr>
+            <tr>
+              <td>11 - 1 pm</td>
+              <td colspan="5" class="descanso">DESCANSO</td>
+            </tr>
+            <tr>
+              <td>3 - 5 pm</td>
+              <td>Historia</td>
+              <td>Arte</td>
+              <td>Música</td>
+              <td>Tecnología</td>
+              <td>Física</td>
+            </tr>
+            <tr>
+              <td>5 - 7 pm</td>
+              <td>Inglés</td>
+              <td>Economía</td>
+              <td>Química</td>
+              <td>Redacción</td>
+              <td>Música</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="6">Horario de verano</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>

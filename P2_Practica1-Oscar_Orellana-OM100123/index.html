@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Práctica - Multimedia y Enlaces</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section id="nav-section">
+        <ul>
+          <li>
+            <a href="#video-section"> Ver video </a>
+          </li>
+          <li>
+            <a href="#audio-section"> Escuchar audio </a>
+          </li>
+          <li>
+            <a href="#external-page-section">Ir a página externa</a>
+          </li>
+          <li>
+            <a href="#web-dev-section">
+                <img src="media/dev.jpeg" alt="" width="75px" height="75px">
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="video-section">
+        <h1>Vídeo con múltiples formatos</h1>
+        <video width="100%" autoplay controls loop muted>
+          <source src="media/video-mar.mp4" type="video/mp4" />
+          <source src="media/video-mar.webm" type="video/webm" />
+          Su navegador no soporta el elemento de video.
+        </video>
+      </section>
+
+      <hr />
+
+      <section id="audio-section">
+        <h1>Audio con múltiples formatos</h1>
+        <audio controls loop autoplay>
+          <source src="media/box-box.mp3" type="audio/mp3" />
+          <source src="media/box-box.wav" type="audio/wav" />
+          Su navegador no soporta el elemento de audio.
+        </audio>
+      </section>
+
+      <section id="external-page-section">
+        <a href="https://webdesktop.ufg.edu.sv"
+        target="_blank"
+        class="external-link"">
+            <h1>Visita la plataforma WebDesktop UFG</h1>
+        </a>
+      </section>
+
+      <section id="web-dev-section">
+        <h1>¿Qué es el desarrollo web?</h1>
+        <p>El desarrollo web es el proceso de crear y mantener un sitio web funcional en internet, 
+            utilizando diferentes lenguajes de programación según el modelo y la parte de la página 
+            que corresponda1. Se utilizan tecnologías de software del lado del servidor y del lado del 
+            cliente2. En términos funcionales, el desarrollo web se preocupa por integrar las ideas y 
+            diseños preestablecidos en un paso anterior</p>
+      </section>
+
+
+    </main>
+  </body>
+</html>
