@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Formulario de Registro</title>
+  </head>
+  <body>
+    <main>
+      <div class="form-container">
+        <h1>Formulario de Registro</h1>
+        <form action="">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="registerName">Nombre</label>
+              <input
+                type="text"
+                id="registerName"
+                name="registerName"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="registerEmail">Correo electrónico</label>
+              <input
+                type="email"
+                id="registerEmail"
+                name="registerEmail"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="registerPass">Contraseña</label>
+              <input
+                type="password"
+                id="registerPass"
+                name="registerPass"
+                required
+                minlength="6"
+              />
+            </div>
+          </div>
+          <div class="form-row submit">
+            <button type="submit" class="submit-btn">Enviar</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="form-container">
+        <h1>Formulario de Contacto</h1>
+        <form action="">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Nombre</label>
+              <input type="text" id="contactName" name="contactName" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactEmail">Correo electrónico</label>
+              <input
+                type="email"
+                id="contactEmail"
+                name="contactEmail"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactPhone">Número de teléfono</label>
+              <input
+                type="number"
+                minlength="8"
+                pattern="\d{1,8}"
+                id="contactPhone"
+                name="contactPhone"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactMessage">Mensaje</label>
+              <textarea
+                minlength="10"
+                maxlength="300"
+                id="contactMessage"
+                name="contactMessage"
+                required
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="form-row submit">
+            <button type="submit" class="submit-btn">Enviar</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="form-container">
+        <h1>Formulario de reserva de hotel</h1>
+        <form action="">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="hotelName">Nombre</label>
+              <input type="text" id="hotelName" name="hotelName" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="hotelCheckIn">Fecha de entrada</label>
+              <input
+                type="date"
+                id="hotelCheckIn"
+                name="hotelCheckIn"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="hotelCheckOut">Fecha de salida</label>
+              <input
+                type="date"
+                id="hotelCheckOut"
+                name="hotelCheckOut"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="hotelGuests">Número de personas</label>
+              <input
+                type="number"
+                maxlength="8"
+                id="hotelGuests"
+                name="hotelGuests"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row submit">
+            <button type="submit" class="submit-btn">Enviar</button>
+          </div>
+          <div id="error-message" style="color: red"></div>
+        </form>
+      </div>
+
+      <div class="form-container">
+        <h1>Formulario de encuesta</h1>
+        <form action="">
+          <fieldset>
+            <legend>Preguntas de opción múltiple</legend>
+            <div class="form-row">
+              <div class="form-group">
+                <p>Pregunta 1: ¿Cuál es tu color favorito?</p>
+                <input
+                  type="radio"
+                  id="colorRed"
+                  name="color"
+                  value="rojo"
+                  required
+                />
+                <label for="colorRed">Rojo</label>
+                <input
+                  type="radio"
+                  id="colorGreen"
+                  name="color"
+                  value="verde"
+                />
+                <label for="colorGreen">Verde</label>
+                <input type="radio" id="colorBlue" name="color" value="azul" />
+                <label for="colorBlue">Azul</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <p>Pregunta 2: ¿Cuál es tu comida favorita?</p>
+                <input
+                  type="radio"
+                  id="foodPizza"
+                  name="food"
+                  value="pizza"
+                  required
+                />
+                <label for="foodPizza">Pizza</label>
+                <input
+                  type="radio"
+                  id="foodBurger"
+                  name="food"
+                  value="burger"
+                />
+                <label for="foodBurger">Hamburguesa</label>
+                <input type="radio" id="foodPasta" name="food" value="pasta" />
+                <label for="foodPasta">Pasta</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <p>Pregunta 3: ¿Cuál es tu estación del año favorita?</p>
+                <input
+                  type="radio"
+                  id="seasonSpring"
+                  name="season"
+                  value="primavera"
+                  required
+                />
+                <label for="seasonSpring">Primavera</label>
+                <input
+                  type="radio"
+                  id="seasonSummer"
+                  name="season"
+                  value="verano"
+                />
+                <label for="seasonSummer">Verano</label>
+                <input
+                  type="radio"
+                  id="seasonAutumn"
+                  name="season"
+                  value="otoño"
+                />
+                <label for="seasonAutumn">Otoño</label>
+                <input
+                  type="radio"
+                  id="seasonWinter"
+                  name="season"
+                  value="invierno"
+                />
+                <label for="seasonWinter">Invierno</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <p>Pregunta 4: ¿Cuál es tu deporte favorito?</p>
+                <input
+                  type="radio"
+                  id="sportSoccer"
+                  name="sport"
+                  value="futbol"
+                  required
+                />
+                <label for="sportSoccer">Fútbol</label>
+                <input
+                  type="radio"
+                  id="sportBasketball"
+                  name="sport"
+                  value="baloncesto"
+                />
+                <label for="sportBasketball">Baloncesto</label>
+                <input
+                  type="radio"
+                  id="sportTennis"
+                  name="sport"
+                  value="tenis"
+                />
+                <label for="sportTennis">Tenis</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <p>Pregunta 5: ¿Cuál es tu género de música favorito?</p>
+                <input
+                  type="radio"
+                  id="musicRock"
+                  name="music"
+                  value="rock"
+                  required
+                />
+                <label for="musicRock">Rock</label>
+                <input type="radio" id="musicPop" name="music" value="pop" />
+                <label for="musicPop">Pop</label>
+                <input type="radio" id="musicJazz" name="music" value="jazz" />
+                <label for="musicJazz">Jazz</label>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="openQuestion">Comentarios adicionales</label>
+              <textarea
+                id="openQuestion"
+                name="openQuestion"
+                minlength="10"
+                maxlength="300"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="form-row submit">
+            <button type="submit" class="submit-btn">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
