@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    flex-direction: column;
+}
+
+main {
+    padding: 100px 0px;
+}
+
+img {
+    width: 100%;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.main-img {
+
+    max-width: 300px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border-top: dotted 5px #ab6d5e;
+    border-bottom: solid 5px #ab6d5e;
+    border-left: double 5px #ab6d5e;
+    border-right: groove 5px #ab6d5e;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    background-color: #f0f0f0;
+    gap: 10px;
+    margin-bottom: 50px;
+
+    .container-item {
+        flex: 1;
+    }
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    overflow: hidden;
+    padding: 20px;
+    height: 425px;
+
+    .card-img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: #7a5f82;
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 600px) {
+
+    body {
+        height: 100%;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}
+
+
+@media (width > 600px) and (width <=900px) {
+
+    body {
+        height: 100%;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .card {
+        background-color: #c2d7ff;
+    }
+
+    .main-img {
+        min-width: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: cen;
+    }
+
+    .container-item {
+        flex: 0 1 calc(50% - 20px) !important;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (width > 900px) {
+
+    body {
+        height: 100%;
+    }
+
+    .main-img {
+        min-width: 90vw;
+    }
+}
+
+@media (orientation: landscape) {
+
+    .container {
+        flex-direction: row;
+    }
+
+}
+
+@media (orientation: landscape) and (width < 1200px) {
+
+    main {
+        padding: 0;
+    }
+
+    body {
+        background-color: #000;
+    }
+
+    .container {
+        background-color: transparent;
+    }
+
+}

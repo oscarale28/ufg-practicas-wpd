@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parcial 2 - Oscar Orellana</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <nav id="nav-section">
+        <ul>
+          <li>
+            <a href="#lists-section">Listas</a>
+          </li>
+          <li>
+            <a href="#multimedia-section">Multimedia</a>
+          </li>
+          <li>
+            <a href="#form-section">Formulario</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section id="lists-section" class="lists-section">
+        <h1>Listas</h1>
+        <div class="lists-container">
+          <article>
+            <h3>
+              Cosas que los gatos <em>aman</em>
+              <small>
+                <a
+                  href="https://zonagatos.com/que-les-gusta-a-los-gatos/#google_vignette"
+                  >(Fuente)</a
+                >
+              </small>
+            </h3>
+            <ol class="mt-25">
+              <li>Menta Gatuna</li>
+              <li>Apuntadores Laser</li>
+              <li><s>Lasaña</s></li>
+            </ol>
+          </article>
+
+          <article>
+            <h3>
+              Cosas que los gatos <strong>odian</strong>
+              <small>
+                <a href="https://www.muyinteresante.com/mascotas/7132.html"
+                  >(Fuente)</a
+                >
+              </small>
+            </h3>
+            <ul>
+              <li>El agua</li>
+              <li>Ruidos y olores fuertes</li>
+              <li>La suciedad</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="multimedia-section" class="multimedia-section">
+        <h1>Multimedia</h1>
+        <audio controls loop autoplay src="media/box-box.mp3"></audio>
+        <video
+          width="100%"
+          src="media/video-mar.mp4"
+          autoplay
+          controls
+          loop
+          muted
+        ></video>
+        <div class="images-section">
+          <div class="image-container">
+            <h2>Halcón Milenario</h2>
+            <img
+              id="millenium-falcon"
+              src="media/millenium-falcon.jpg"
+              alt="Halcón Milenario"
+            />
+            <p>
+              El Halcón Milenario, cariñosamente conocido como el "Más Rápido
+              Montón de Chatarra en la Galaxia", es un carguero ligero
+              Corelliano YT-1300 que ha sido pesadamente modificado para
+              adaptarse a las necesidades de sus pilotos. Con su diseño
+              irregular y su armadura astillada, el Halcón Milenario parece un
+              barco espacial desvencijado, pero en realidad es una nave
+              extremadamente rápida y maniobrable, capaz de realizar hazañas
+              increíbles en el espacio. Su historia está llena de aventuras y
+              batallas, y ha sido pilotado por algunos de los personajes más
+              icónicos de la saga, como Han Solo y Chewbacca.
+            </p>
+          </div>
+          <div class="image-container">
+            <h2>Crucero Venator</h2>
+            <img id="venator-cruiser" src="media/venator.jpg" alt="Venator" />
+            <p>
+              El Crucero Venator es un buque de guerra rápido y letal, diseñado
+              para llevar a cabo misiones de combate y patrullaje en el espacio.
+              Con su diseño aerodinámico y su armadura pesada, el Crucero
+              Venator es capaz de soportar importantes daños en batalla. Está
+              equipado con una variedad de armas, incluyendo cañones láser y
+              lanzadores de misiles, lo que lo hace un oponente formidable en el
+              espacio. Además, su gran velocidad y maniobrabilidad lo convierten
+              en un buque de guerra ideal para misiones de persecución y
+              escolta. Durante la Guerra de los Clones, los Cruceros Venator
+              fueron utilizados por la República Galáctica para luchar contra la
+              Confederación de Sistemas Independientes, y fueron comandados por
+              algunos de los más destacados almirantes de la República, como
+              Mace Windu y Yoda.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="form-section" class="form-section">
+        <div class="form-container">
+          <h1>Formulario de registro</h1>
+          <br />
+          <form action="">
+            <!--Name section-->
+            <div class="form-row">
+              <div class="form-group flex-05">
+                <label for="forename">Nombres:</label>
+                <input type="text" id="forename" name="forename" required />
+              </div>
+
+              <div class="form-group flex-05">
+                <label for="surname">Apellidos:</label>
+                <input type="text" id="surname" name="surname" required />
+              </div>
+            </div>
+
+            <!--Gender section-->
+            <div class="form-row">
+              <p>Sexo:</p>
+              <div class="form-group radio flex-05">
+                <input type="radio" id="radioMale" name="radioMale" value="m" />
+                <label for="radioMale">Masculino</label>
+              </div>
+              <div class="form-group radio flex-05">
+                <input
+                  type="radio"
+                  id="radioFemale"
+                  name="radioFemale"
+                  value="f"
+                />
+                <label for="radioFemale">Femenino</label>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group flex-1">
+                <label for="email">Correo electrónico:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="correo@correo.com"
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group check flex-1">
+                <input type="checkbox" id="checkOffers" name="checkOffers" />
+                <label for="checkOffers"
+                  >Deseo recibir información sobre novedades y ofertas</label
+                >
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group check flex-1">
+                <input
+                  type="checkbox"
+                  id="checkTerms"
+                  name="checkTerms"
+                  checked
+                />
+                <label for="checkTerms"
+                  >Declaro haber leido y aceptar las condiciones generales del
+                  programa y la normativa sobre protección de datos</label
+                >
+              </div>
+            </div>
+            <div class="form-row submit">
+              <button type="submit" class="submit-btn">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Parcial 2 - Diseño de Páginas Web</p>
+    </footer>
+  </body>
+</html>
