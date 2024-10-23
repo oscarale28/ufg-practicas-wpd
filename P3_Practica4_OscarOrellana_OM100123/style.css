@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100dvh;
+    padding: 20px 50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 100px;
+}
+
+.components-section {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
+}
+
+.component-card {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    display: grid;
+    place-items: center;
+}
+
+.btn-color-hover {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.btn-color-hover:hover {
+    background-color: #014d9e;
+}
+
+.img-width-hover {
+    transition: width 0.5s ease;
+}
+
+.img-width-hover:hover {
+    width: 200px;
+}
+
+.paragraph-opacity-hover {
+    opacity: 0.2;
+    background-color: #d8d6d6;
+    padding: 10px;
+    transition: opacity 0.5s ease;
+}
+
+.paragraph-opacity-hover:hover {
+    opacity: 1;
+}
+
+.img-rotate-hover {
+    transition: transform 0.5s ease;
+}
+
+.img-rotate-hover:hover {
+    transform: rotate(180deg);
+}
+
+.title-opacity-hover {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.title-opacity-hover:hover {
+    opacity: 0.2;
+}
+
+.circle-position-hover {
+    width: 100px;
+    height: 100px;
+    background-color: #9e1717;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+.circle-card:hover {
+    .circle-position-hover {
+        transform: translateX(75px);
+    }
+}
+
+.box-card {
+    grid-column: span;
+}
+
+.box-card:hover {
+    .box-transition-hover {
+        transform: translateX(100px);
+        background-color: #ff9d60;
+    }
+}
+
+.box-transition-hover {
+    width: 100px;
+    height: 100px;
+    background-color: #9054ff;
+    transition: transform 0.4s ease, background-color 0.4s ease;
+}
